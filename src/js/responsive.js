@@ -12,7 +12,9 @@ export default function responsive() {
     
         $('.drum-machine').removeClass('rounded-5');
         $('.drum-machine').addClass('rounded-2');
-        $('.drum-machine').css({'width': '240px', 'height': '430px'});
+        $('.drum-machine').css({'width': '240px', 'height': '500px'});
+
+        $('#volume-slider').css({'width': '120px'})
     }
     else {
         $('.drum-pads').removeClass("col-10");
