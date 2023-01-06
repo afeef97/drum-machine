@@ -1,0 +1,33 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+$main-bg: rgb(100, 100, 100);
+$drum-machine-bg: rgb(40, 40, 40);
+$drum-pads: rgb(240, 227, 45);
+$panel: rgb(204, 194, 61);
+$pads: rgba(236, 236, 231, 0.637);
+
+body {
+    background-color: $main-bg;
+}
+
+.drum-machine {
+    background-color: $drum-machine-bg;
+    width: 700px;
+    height: 300px;
+}
+
+.drum-pads {
+    background-color: $drum-pads;
+    border-bottom-left-radius: 1rem;
+}
+
+.panel {
+    background-color: $panel;
+    border-bottom-right-radius: 1rem;
+}
+
+.btn-light {
+    background: $pads;
+    border-color: $pads;
+}
