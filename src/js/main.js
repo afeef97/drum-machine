@@ -1,14 +1,16 @@
 import '../scss/styles.scss';
-import * as bootstrap from 'bootstrap';
-import $, { event } from 'jquery';
+import $ from 'jquery';
 import playAudio from './audio';
+
+let volume = 0.3;
 
 jQuery(function() {
     $('body').on("keypress", function(event) {
         let key = String.fromCharCode(event.which);
-        playAudio(key.toUpperCase());
+        playAudio(key.toUpperCase(), volume);
     });
     $('.btn').on("click", function() {
-        playAudio($(this).attr('id'));
+        playAudio($(this).attr('id'), volume);
     })
+    
 })
