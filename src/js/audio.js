@@ -10,12 +10,13 @@ const audioMap = {
     'C': 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3',
 }
 
-export default function playAudio(buttonID) {
+export default function playAudio(buttonID, vol) {
     const audioElement = document.createElement('audio');
     if(audioMap.hasOwnProperty(buttonID)) {
         audioElement.setAttribute('src', audioMap[buttonID]);
     }
     
+    audioElement.volume = vol;
     audioElement.play();
 }
     
