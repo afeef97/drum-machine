@@ -1,4 +1,3 @@
-// Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
 $main-bg: rgb(100, 100, 100);
@@ -23,6 +22,10 @@ body {
 }
 
 .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: $panel;
     border-bottom-right-radius: 1rem;
 }
@@ -30,4 +33,12 @@ body {
 .btn-light {
     background: $pads;
     border-color: $pads;
+}
+
+.display {
+    background-color: rgba(0, 128, 0, 0.76);
+    width: 100px;
+    height: 45px;
+    padding: 8px 0;
+    text-align: center;
 }
